@@ -1,0 +1,59 @@
+// Loop page styles
+
+ul#loop {
+	display: grid;
+	
+	list-style: none;
+	
+	padding: 0;
+	margin: 30px auto;
+	
+	width: 100%;
+	
+	@include sm-up {
+		grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+		grid-gap: 50px;
+	}
+	
+	li {
+		display: inline-block;
+		
+		margin: 0;
+		padding: 20px 0;
+		
+		border-top: 		5px solid black;
+		
+		h2 {
+			
+			padding: 0;
+			margin: 0;
+			
+			a {
+				font-weight: 	600;
+				color:			$loop-link-color;
+				
+				&:focus,
+				&:hover {
+					-webkit-text-decoration-color: $loop-link-hover-color;
+							text-decoration-color: $loop-link-hover-color;
+				}
+			}
+		}
+		
+		p {
+			
+			line-height: 	1.2;
+			margin: 5px 0;
+			padding: 0;
+			
+			&:first-of-type {
+				margin-top: 15px;
+			}
+			
+			time {
+				font-size: 		$font-size-base * 0.9;
+				font-weight: 	600;
+			}
+		}
+	}
+}

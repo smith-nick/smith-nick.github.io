@@ -8,9 +8,19 @@ layout: page
 	
 		{% if site.categories[entry.letter].size > 0 %}
 		
-		<a href="{{ site.url | append: entry.url }}">
-			<li>{{ entry.letter }}</li>
-		</a>
+			{% if page.url contains entry.url %}
+			
+				<a class="active" href="{{ site.url | append: entry.url }}">
+					<li>{{ entry.letter }}</li>
+				</a>
+			
+			{% else %}
+			
+				<a href="{{ site.url | append: entry.url }}">
+					<li>{{ entry.letter }}</li>
+				</a>
+			
+			{% endif %}
 		
 		{% else %}
 		
@@ -27,7 +37,7 @@ layout: page
 	
 	<ul id="loop">
 
-		{% for post in site.posts %}
+		{% for post in site.categories[page.title] %}
 		<li>
 		
 			<h2><a href="{{ post.url }}" title="Read {{ post.title}}">{{ post.title }}</a></h2>

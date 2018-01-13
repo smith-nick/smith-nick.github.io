@@ -1,0 +1,14 @@
+<div class="navigation">
+	
+	<nav>
+		<ul>
+			{% if page.layout != "home" %}
+			<li><a href="{{ site.url | site.baseurl }}" title="Go to homepage">Home</a></li>
+			{% endif %}
+			{% for link in site.data.nav %}
+			<li><a href="{{ link.url }}" title="Go to {{ link.name }}">{{ link.name }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+	
+</div>

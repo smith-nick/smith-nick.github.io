@@ -1,0 +1,150 @@
+// Home page styles
+
+body#page,
+body#loop,
+body#loop-category,
+body#about {
+	
+	div#content {
+		
+		h1#page-title {
+			width: 100%;
+			
+			@supports (display:grid) {
+			
+				min-height: 40vh;
+				
+				display: grid;
+				justify-content: center;
+				align-content: center;
+								
+			}
+			
+			padding: 	50px 20px;
+			margin: 		10px 0;
+			
+			background: $page-title-background;
+			
+
+			font-size: 		$heading1-font-size-base * 1.25;
+							
+			@include sm {
+				font-size: 		$heading1-font-size-base * 1.25;
+			}
+			@include md {
+				font-size: 		$heading1-font-size-base * 1.5;
+			}
+			@include lg {
+				font-size: 		$heading1-font-size-base * 1.75;
+			}
+			@include xl {
+				font-size: 		$heading1-font-size-base * 2;
+			}
+			
+			&.loop-category-page {
+				text-transform: uppercase;
+			}
+			
+		}
+		
+		div#page-body {
+			
+			display: block;
+			
+			max-width: 800px;
+			
+			margin: 40px auto;
+	
+			iframe {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: $font-size-base !important;
+				margin-bottom: $font-size-base !important;
+			}
+			
+			div.footnotes {
+				margin-top: 40px;
+				
+				width: 		100%;
+				padding: 	10px 20px;
+				
+				background: $gray-200;
+				
+				border-radius: 20px;
+						
+				&:before {
+					@extend h4;
+					content: "Footnotes";
+					
+					display: block;
+					width: 100%;
+					
+					font-size: 		$font-size-base - 2px !important;
+					padding: 0;
+				}
+				
+				ul {
+					padding-left: 20px;
+				}
+				
+				li, p {
+					font-size: 		$font-size-base - 4px !important;
+					padding: 		0;
+				}
+				
+			}
+			
+		}
+		
+	}	
+	
+}
+
+body#loop,
+body#loop-category {
+	ul#alphabet-index {
+		display: grid;
+		
+		list-style: none !important;
+
+		padding: 0;
+		margin: 0;
+		
+        grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
+		grid-gap: 10px;
+				
+		a {
+			color:				$black;
+			background: 			$primary;
+			text-decoration: 	none;
+			font-weight: 		900;
+			
+			&:hover,
+			&:focus {
+				background: $black;
+				color: 		$primary;
+			}
+		}
+				
+		li {
+			display: inline-block;
+						
+			margin: 0;
+			padding: 0;
+			
+			height: 50px;
+			width: 50px;
+			
+			font-weight: 	400;
+			text-transform: uppercase;
+			line-height: 	50px;
+			text-align: 		center;
+				
+			&.disabled {
+				background: $gray-200;
+				color:		$gray-600;
+			}
+		}
+	}
+}

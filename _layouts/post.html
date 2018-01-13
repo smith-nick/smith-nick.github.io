@@ -3,25 +3,21 @@ layout: default
 ---
 
 <main class="container">
-	
-	{% include header.html %}
-			
-	<div id="content">
-		
-		<div id="post-content">
-			
-			<h1 id="post-title">{{ page.title }}</h1>
-	
-			<div class="post-body">
 				
+	<div id="content">
+
+		{% include header.html %}
+
+		<h1 id="page-title">{{ page.title }}</h1>
+
+		<div id="page-body">
+			
 			{{ content }}
 			
-			</div>
-			
 		</div>
+		
+		{% include footer.html %}
 							
 	</div>
 	
-	{% include footer.html %}
-
 </main>

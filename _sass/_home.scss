@@ -1,0 +1,108 @@
+// Home page styles
+
+html#home,
+body#home {
+		
+	width: 100vw;
+	height: 100vh;
+	
+	background:		$home-body-background;
+	color: 			$home-body-color;
+	
+	main.container {
+		height: 100vh;
+		width: 100vw;
+		
+		align-content: center;
+		justify-content: flex-start;
+	}
+	
+	div.colophon {
+		
+		@supports (display: grid) {
+			align-self: center;
+			justify-self: flex-start;
+		}
+		
+		text-align: left;
+		width: 100%;
+		
+		h1,
+		p {	
+			margin: 0;
+			padding: 0;
+
+			text-align: left;
+			line-height: 1.1;
+		}
+		
+		h1 {
+				font-size: 		$heading1-font-size-base * 1.5;
+								
+				@include sm {
+					font-size: 		$heading1-font-size-base * 2;
+				}
+				@include md {
+					font-size: 		$heading1-font-size-base * 2.5;
+				}
+				@include lg {
+					font-size: 		$heading1-font-size-base * 3;
+				}
+				@include xl {
+					font-size: 		$heading1-font-size-base * 3;
+				}
+		}
+		
+	}
+	
+	div.navigation {
+		position: absolute;
+		display: block;
+		
+		top: auto;
+		bottom: 0;
+		
+		width: 100%;
+
+		nav {
+			width: 100%;
+			
+			ul {
+				display: inline-block;
+				
+				padding: 20px 5px;
+				margin: 0;
+				
+				list-style: none;
+				
+				li {
+					display: inline-block;
+					
+					margin-right: 20px; 
+					
+					a {
+						color: $black;
+						font-weight: 600;
+						
+						font-size: 			$font-size-base;
+											
+						@include sm {
+							font-size: 		$font-size-base;
+						}
+						@include md {
+							font-size: 		$font-size-base * 1.5;
+						}
+						@include lg {
+							font-size: 		$font-size-base * 1.5;
+						}
+						@include xl {
+							font-size: 		$font-size-base * 1.5;
+						}					
+					}
+				}
+			}
+			
+		}
+	}
+		
+}

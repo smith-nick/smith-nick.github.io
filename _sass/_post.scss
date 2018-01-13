@@ -1,0 +1,95 @@
+// Posts page styles
+
+body#post {
+	
+	div#content {
+		
+		h1#page-title {
+			width: 100%;
+			
+			@supports (display:grid) {
+			
+				min-height: 40vh;
+				
+				display: grid;
+				justify-content: center;
+				align-content: center;
+								
+			}
+			
+			padding: 	50px 20px;
+			margin: 		10px 0;
+			
+			background: $page-title-background;
+			
+	
+			font-size: 		$heading1-font-size-base * 1.25;
+							
+			@include sm {
+				font-size: 		$heading1-font-size-base * 1.25;
+			}
+			@include md {
+				font-size: 		$heading1-font-size-base * 1.5;
+			}
+			@include lg {
+				font-size: 		$heading1-font-size-base * 1.75;
+			}
+			@include xl {
+				font-size: 		$heading1-font-size-base * 2;
+			}
+			
+		}
+		
+		div#page-body {
+			
+			display: block;
+			
+			max-width: 800px;
+			
+			margin: 40px auto;
+	
+			iframe {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: $font-size-base !important;
+				margin-bottom: $font-size-base !important;
+			}
+			
+			div.footnotes {
+				margin-top: 40px;
+				
+				width: 		100%;
+				padding: 	10px 20px;
+				
+				background: $gray-200;
+				
+				border-radius: 20px;
+						
+				&:before {
+					@extend h4;
+					content: "Footnotes";
+					
+					display: block;
+					width: 100%;
+					
+					font-size: 		$font-size-base - 2px !important;
+					padding: 0;
+				}
+				
+				ul {
+					padding-left: 20px;
+				}
+				
+				li, p {
+					font-size: 		$font-size-base - 4px !important;
+					padding: 		0;
+				}
+				
+			}
+			
+		}
+		
+	}
+		
+}

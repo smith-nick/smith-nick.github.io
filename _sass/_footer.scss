@@ -1,0 +1,30 @@
+// Footer styles
+
+footer#site-footer {
+		
+	display: block;
+	position: relative;
+			
+	width: 100%;
+			
+	padding-top: 50px;
+	padding-bottom: 50px;
+		
+	p {
+		font-size: $font-size-base - 5px !important;
+		line-height: 1.2;
+		margin: 0;
+
+		a {
+			color: $black;
+		}
+		
+		&:first-of-type a {
+			font-weight: 600;
+		}
+		&:last-of-type {
+			margin-bottom: 5px !important;
+		}
+	}
+	
+}

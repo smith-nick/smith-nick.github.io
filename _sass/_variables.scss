@@ -1,0 +1,106 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white:    #fafafa !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
+
+$blue:    #007aff !default;
+$indigo:  #1d62f0 !default;
+$purple:  #c643fc !default;
+$pink:    #ff2a68 !default;
+$red:     #EF3340 !default;
+$orange:  #ff5e3a !default;
+$yellow:  #FEDD00 !default;
+$green:   #0bd318 !default;
+$cyan:    #1ad6fd !default;
+
+$primary:	$yellow;
+
+
+// Default colors
+
+$home-body-background:			$primary;
+$home-body-color:				$black;
+
+$four-oh-four-body-background:	$black;
+$four-oh-four-body-color:		$white;
+
+$body-background:				$white;
+$body-color:						$black;
+
+$link-color:						$blue;
+$link-hover-color:				$cyan;
+$link-font-weight:				400;
+$link-outline:					none;
+$link-text-decoration:			none;
+$link-text-decoration-hover:		underline;
+
+$loop-link-hover-color:			$primary;
+$loop-link-color:				$black;
+
+$header-color:					$black;
+$header-color-hover:				$link-color;
+
+$heading-color:					$black;
+$page-title-color:				$black;
+$page-title-background:			$primary;
+
+$code-color:						$black;
+
+$font-size-base:					20px;
+$font-line-height:				1.25;
+
+$heading1-font-size-base:		34px;
+$heading2-font-size-base:		$heading1-font-size-base - 4px;
+$heading3-font-size-base:		$heading2-font-size-base - 4px;
+$heading4-font-size-base:		$heading3-font-size-base - 4px;
+$heading5-font-size-base:		$heading4-font-size-base - 4px;
+$heading6-font-size-base:		$heading5-font-size-base - 4px;
+
+
+// BREAKPOINT VALUES
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1400px;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-xs: 300px;
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1240px;
+
+$container-padding: 15px;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Arial, sans-serif !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
