@@ -1,0 +1,72 @@
+# Site settings
+
+# host: 192.168.1.66
+
+title: Nick Smith
+author: Nick Smith
+description: "I'm Nick Smith."
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://smith-nick.github.io"
+author: "Nick Smith"
+
+# Images and assets
+image-path: "/assets/images"
+css-path: "/assets/styles"
+js-path: "/assets/scripts"
+
+hero-images-path: "/assets/images/hero/"
+post-images-path: "/assets/images/posts/"
+
+logo-png: "/assets/images/site/logo.png"
+logo-svg: "/assets/images/site/logo.svg"
+
+social-media-image: "/assets/images/site/social-media.png"
+
+touch: "/assets/images/site/touch.png"
+pinned: "/assets/images/site/pinned.svg"
+pinned-colour: "#ff2a68"
+logo-favicon-small: "/assets/images/site/favicon-16x16.png"
+logo-favicon-medium: "/assets/images/site/favicon-32x32.png"
+logo-favicon-large: "/assets/images/site/favicon-96x96.png"
+
+# Social settings
+facebook-app-id: "" # For Facebook OpenGraph integration
+facebook-profile-id: "" # For Facebook OpenGraph integration
+facebook-url:	"https://facebook.com/visage.tome"
+facebook-handle: "visage.tome" # Automatically pre-pends http://facebook.com/
+
+
+twitter-url: "https://twitter.com/nixmyth82" # Twitter handle i.e. joebloggs
+twitter-handle: "nixmyth82" # Twitter handle i.e. joebloggs
+
+linkedin-url:  "https://www.linkedin.com/in/"
+linkedin-handle:  ""
+
+flickr-url:  "https://www.flickr.com/photos/"
+flickr-handle:  ""
+
+instagram-url:  "https://www.instagram.com/"
+instagram-handle:  ""
+
+github-url:  "https://github.com/smith-nick"
+github-handle:  "smith-nick"
+
+# Google settings
+google-site-verification: ""
+google-analytics: "" # GA ID code
+
+# Plugins and build settings
+
+permalink: pretty
+markdown: kramdown
+future: false
+sass:
+    sass_dir: _sass
+    sourcemap: true
+
+plugins:
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from
+- jekyll-paginate
