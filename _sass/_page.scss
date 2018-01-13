@@ -111,7 +111,7 @@ body#loop-category {
 		padding: 0;
 		margin: 0;
 		
-        grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
 		grid-gap: 10px;
 				
 		a {
@@ -119,6 +119,7 @@ body#loop-category {
 			background: 			$primary;
 			text-decoration: 	none;
 			font-weight: 		900;
+			text-align: 			center;
 			
 			&:hover,
 			&:focus {
@@ -134,7 +135,6 @@ body#loop-category {
 			padding: 0;
 			
 			height: 50px;
-			width: 50px;
 			
 			font-weight: 	400;
 			text-transform: uppercase;

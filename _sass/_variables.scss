@@ -21,7 +21,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000000 !default;
 
-$blue:    #007aff !default;
+$blue:    #0072CE !default;
 $indigo:  #1d62f0 !default;
 $purple:  #c643fc !default;
 $pink:    #ff2a68 !default;
@@ -46,8 +46,8 @@ $body-background:				$white;
 $body-color:						$black;
 
 $link-color:						$blue;
-$link-hover-color:				$cyan;
-$link-font-weight:				400;
+$link-hover-color:				darken($blue,20%);
+$link-font-weight:				600;
 $link-outline:					none;
 $link-text-decoration:			none;
 $link-text-decoration-hover:		underline;
@@ -64,10 +64,10 @@ $page-title-background:			$primary;
 
 $code-color:						$black;
 
-$font-size-base:					20px;
+$font-size-base:					18px;
 $font-line-height:				1.25;
 
-$heading1-font-size-base:		34px;
+$heading1-font-size-base:		30px;
 $heading2-font-size-base:		$heading1-font-size-base - 4px;
 $heading3-font-size-base:		$heading2-font-size-base - 4px;
 $heading4-font-size-base:		$heading3-font-size-base - 4px;

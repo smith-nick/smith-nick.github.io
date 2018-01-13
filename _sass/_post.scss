@@ -23,7 +23,7 @@ body#post {
 			background: $page-title-background;
 			
 	
-			font-size: 		$heading1-font-size-base * 1.25;
+			font-size: 		$heading1-font-size-base;
 							
 			@include sm {
 				font-size: 		$heading1-font-size-base * 1.25;
@@ -60,12 +60,11 @@ body#post {
 				margin-top: 40px;
 				
 				width: 		100%;
-				padding: 	10px 20px;
+				max-width: 	550px;
+				padding: 	10px 0px;
 				
-				background: $gray-200;
-				
-				border-radius: 20px;
-						
+				border-top: 4px solid $black;
+										
 				&:before {
 					@extend h4;
 					content: "Footnotes";
@@ -78,7 +77,7 @@ body#post {
 				}
 				
 				ul {
-					padding-left: 20px;
+					padding-left: 30px;
 				}
 				
 				li, p {

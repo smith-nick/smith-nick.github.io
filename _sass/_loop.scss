@@ -19,8 +19,11 @@ ul#loop {
 		display: inline-block;
 		
 		margin: 0;
-		padding: 20px 0;
-		
+		padding: 20px 0 40px 0;
+
+		@include sm-up {
+			padding: 20px 0;
+		}		
 		border-top: 		5px solid black;
 		
 		h2 {
