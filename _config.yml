@@ -7,7 +7,7 @@ author: Nick Smith
 description: "I'm Nick Smith."
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://smith-nick.github.io"
+url: "https://smith-nick.github.io"
 author: "Nick Smith"
 
 # Images and assets
