@@ -54,7 +54,7 @@ github-handle:  "smith-nick"
 
 # Google settings
 google-site-verification: ""
-google-analytics: "" # GA ID code
+google-analytics: "UA-112444573-1" # GA ID code
 
 # Plugins and build settings
 
