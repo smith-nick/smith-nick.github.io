@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Brazililan"
+title: "Brazilian"
 excerpt: "I made Brazilian Food"
 
 category: [B]
